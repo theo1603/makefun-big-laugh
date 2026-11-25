@@ -1,24 +1,18 @@
 #!/usr/bin/env python3
-"""One Line, Big Laugh entry.
+"""One Line, Big Laugh entry: writes one funny line to /output/entry.txt.
 
-Writes one original funny line to ``$MAKEFUN_OUTPUT_DIR/entry.txt``
-(default ``/output``). Python standard library only; no network,
-no randomness, fully deterministic.
-"""
+Revision: "whispered" for "said" (creepier, fits the privacy theme) and
+"ordered me" for "immediately bought me ... for my trust issues" —
+ordering it completes the betrayal, and the blanket already says it."""
 
 import os
 
-# The joke turns twice: the speaker mocks the privacy request, then
-# "helps" by buying something for the very trust issues it caused.
-# Revision: "whispered, 'Say no more,'" replaces "laughed and said,
-# 'Of course,'" (fewer words, creepier — it fits the privacy theme),
-# and "ordered me a weighted blanket" replaces "bought me a weighted
-# blanket for my trust issues" (ordering it completes the betrayal,
-# and the blanket already says trust issues, so the explanation is cut).
-# Same turn, tighter: 126 chars down to 101.
+# Turn twice: the speaker mocks the privacy request, then "helps" by
+# buying something for the very trust issues it caused. Shorter now:
+# the whisper lands faster and the order finishes the joke.
 LINE = (
     "I asked my smart speaker for privacy. It whispered, "
-    "\"Say no more,\" and ordered me a weighted blanket."
+    "'You got it,' and ordered me a weighted blanket."
 )
 
 
