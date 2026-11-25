@@ -10,9 +10,10 @@ import os
 
 # The joke turns twice: the speaker mocks the privacy request, then
 # "helps" by buying something for the very trust issues it caused.
-# Revision 2: "ordered me a weighted blanket" lands harder than
-# "added a weighted blanket to my cart" — same turn, fewer words,
-# and ordering it (not just carting it) makes the betrayal complete.
+# Revision: "whispered" replaces "laughed and said" (fewer words, and
+# creepier — it fits the privacy theme), and "ordered me" replaces
+# "added ... to my cart" (ordering it, not just carting it, completes
+# the betrayal). Same turn, tighter: 118 chars down to 105.
 LINE = (
     "I asked my smart speaker for privacy. It whispered, "
     "\"That's adorable,\" and ordered me a weighted blanket."
