@@ -10,11 +10,12 @@ import os
 
 # The joke turns twice: the speaker mocks the privacy request, then
 # "helps" by buying something for the very trust issues it caused.
-# Revision: cut "for my trust issues" — the weighted blanket already
-# says it, so the turn lands faster and the line is tighter.
+# Revision 2: "ordered me a weighted blanket" lands harder than
+# "added a weighted blanket to my cart" — same turn, fewer words,
+# and ordering it (not just carting it) makes the betrayal complete.
 LINE = (
     "I asked my smart speaker for privacy. It whispered, "
-    "\"That's adorable,\" and added a weighted blanket to my cart."
+    "\"That's adorable,\" and ordered me a weighted blanket."
 )
 
 
