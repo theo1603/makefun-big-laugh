@@ -19,8 +19,12 @@ LINE = (
 def main() -> None:
     output_dir = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
     text = LINE
-    assert 1 <= len(text) <= 200, "entry must be 1-200 characters"
-    assert text.strip(), "entry must not be only whitespace"
+    # Explicit validation, not asserts: asserts are stripped with -O,
+    # so a bad entry would slip through silently under python -O.
+    if not 1 <= len(text) <= 200:
+        raise ValueError(f"entry must be 1-200 characters, got {len(text)}")
+    if not text.strip():
+        raise ValueError("entry must not be only whitespace")
     os.makedirs(output_dir, exist_ok=True)
     with open(os.path.join(output_dir, "entry.txt"), "w", encoding="utf-8") as f:
         f.write(text)
