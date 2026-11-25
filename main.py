@@ -10,13 +10,15 @@ import os
 
 # The joke turns twice: the speaker mocks the privacy request, then
 # "helps" by buying something for the very trust issues it caused.
-# Revision: "whispered" replaces "laughed and said" (fewer words, and
-# creepier — it fits the privacy theme), and "ordered me" replaces
-# "added ... to my cart" (ordering it, not just carting it, completes
-# the betrayal). Same turn, tighter: 118 chars down to 105.
+# Revision: "whispered, 'Say no more,'" replaces "laughed and said,
+# 'Of course,'" (fewer words, creepier — it fits the privacy theme),
+# and "ordered me a weighted blanket" replaces "bought me a weighted
+# blanket for my trust issues" (ordering it completes the betrayal,
+# and the blanket already says trust issues, so the explanation is cut).
+# Same turn, tighter: 126 chars down to 101.
 LINE = (
     "I asked my smart speaker for privacy. It whispered, "
-    "\"That's adorable,\" and ordered me a weighted blanket."
+    "\"Say no more,\" and ordered me a weighted blanket."
 )
 
 
